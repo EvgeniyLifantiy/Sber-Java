@@ -21,11 +21,11 @@ public class Stack<T> {  // Stack for all base types, will be created overload m
         this.list = list;
     }
 
-    public void add(T item){
-        list.add(item);
+    public void push(T item){
+        list.add(0,item);
     }
 
-    public T remove(){
+    public T pop(){
         return list.remove(0);
     }
 
