@@ -1,5 +1,8 @@
 package com.Degrees;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static com.Degrees.Converter.ConvertToFahrenheit;
 import static com.Degrees.Converter.ConvertToKelvin;
 
@@ -11,7 +14,6 @@ public class Main {
 
         Temperature temp=new Temperature(12); //Second way of resolve
         System.out.println("Your temperature in Kelvin: "+temp.getKelvin()+" , in Fahrenheit: "+temp.getFahrenheit());
-
 
     }
 }

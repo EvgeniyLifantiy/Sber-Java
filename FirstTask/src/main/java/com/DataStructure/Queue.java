@@ -2,6 +2,9 @@ package com.DataStructure;
 
 import java.util.ArrayList;
 
+//This package contain my practise with different data structure.
+// This class is queue realization by means ArrayList Collection.
+
 public class Queue<T> {
 
 
