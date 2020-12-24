@@ -8,8 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SecondTask" />
         <module name="FirstTask" />
+        <module name="ThirdTask" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="14" />
   </component>
 </project>
