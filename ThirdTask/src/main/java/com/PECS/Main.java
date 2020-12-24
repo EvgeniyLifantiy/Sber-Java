@@ -62,7 +62,10 @@ public class Main {
 
         //test range with comparable
         System.out.println("-----------------------------------------------------");
-
+        System.out.println("Все элементы sourcelist которые больше 22 и меньше 344"+range(list,22,344,(o1, o2) -> -1));
+        // if o1 > o2 => -1,
+        // o1 < o2 => 1,
+        // o1 = o2 => 0
 
 
     }

@@ -58,18 +58,25 @@ public class CollectionUtils {
 
         List<T> rangelist=new ArrayList<>();
         for (T elem :list){
-            if (elem.compareTo(min)>=0 && elem.compareTo(max)<=0){
+            if ((elem.compareTo(min) >= 0) && (elem.compareTo(max) <= 0)){
                 rangelist.add(elem);
             }
-
         }
 
         return rangelist;
 
     }
 
-//    public static List range(List list, Object min, Object max, Comparator comparator) {
-//
-//    }
+     public static <T> List<T> range(List<? extends T> list, T min, T max, Comparator<? super T> comparator) {
+         List<T> rangelist=new ArrayList<>();
+         for (T elem :list){
+             if ((comparator.compare(elem, min) <= 0) && (comparator.compare(elem, max) >= 0)){
+                 rangelist.add(elem);
+             }
+
+         }
+
+         return rangelist;
+    }
 }
 
