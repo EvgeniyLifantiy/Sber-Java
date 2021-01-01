@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SecondTask" />
         <module name="FirstTask" />
         <module name="ThirdTask" />
+        <module name="SecondTask" />
+        <module name="ExceptionsHT" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14" />
