@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class PinValidator {
 
-    private  String pin="1111";
+    private String pin = "1111";
 
     public String getPin() {
         return pin;
@@ -15,21 +15,28 @@ public class PinValidator {
         this.pin = pin;
     }
 
-    Scanner scanner=new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
-    public  String enterPin( Scanner scanner){
+    public void enterPin() {
 
-        String enteredPin="";
+        String enteredPin = "";
 
-        while (enteredPin.length()<4){
+        while (enteredPin.length() < 4) {
             try {
-                enteredPin+=scanner.nextInt();
-            }catch (InputMismatchException e){
+                enteredPin += scanner.nextInt();
+
+            } catch (InputMismatchException e) {   //this exception also work when input > int
+                scanner.skip("[!-~]");// skip all that was added after NaN symbol
                 System.out.println("Вводите только цифры!");
-                scanner.skip("[:-~]");
             }
         }
-        return enteredPin;
+        if (enteredPin.startsWith(pin)) {
+            System.out.println("Пин верный!");
+        }else {
+            System.out.println("NO");
+            enterPin();
+        }
+
     }
 
 }

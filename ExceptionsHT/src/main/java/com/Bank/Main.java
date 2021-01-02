@@ -1,20 +1,11 @@
 package com.Bank;
 
-import java.util.Scanner;
-
-
-
 public class Main {
     public static void main(String[] args) {
-        String password="";
 
+     Terminallmpl terminallmpl= new Terminallmpl("2349");
 
-        System.out.println(password);
-
+        System.out.println(terminallmpl.getPinValidator().getPin());
+                terminallmpl.getPinValidator().enterPin();
     }
-
-
-
-
-
 }
