@@ -7,3 +7,6 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 ## Second Hometask ##
 * [There is a list of the fleet of cars car(string model, string type). you need to split it into lists grouped by type.](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SecondTask/src/main/java/com/CarList)
 * [Working with collections](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SecondTask/src/main/java/com/Presentation)
+## Third Hometask ##
+* [Parametrize and implement CountMap](https://github.com/EvgeniyLifantiy/Sber-Java/ThirdTask/src/main/java/com/CountMap)
+* [Parametrize and realize methods with PECS](https://github.com/EvgeniyLifantiy/Sber-Java/ThirdTask/src/main/java/com/PECS)
