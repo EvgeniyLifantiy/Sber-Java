@@ -15,9 +15,11 @@ public class PinValidator {
         this.pin = pin;
     }
 
+    private int wrongpin=0;
+
     Scanner scanner = new Scanner(System.in);
 
-    public void enterPin() {
+    public boolean enterPin() throws Exception {
 
         String enteredPin = "";
 
@@ -32,11 +34,17 @@ public class PinValidator {
         }
         if (enteredPin.startsWith(pin)) {
             System.out.println("Пин верный!");
+            return true;
         }else {
-            System.out.println("NO");
+            System.out.printf("Неверно");
+            wrongpin++;
+            if(wrongpin>=3){
+                throw new Exception();
+            }
             enterPin();
+
         }
 
+    return false;
     }
-
 }

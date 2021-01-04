@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="FirstTask" />
-        <module name="ThirdTask" />
         <module name="SecondTask" />
+        <module name="ThirdTask" />
         <module name="ExceptionsHT" />
       </profile>
     </annotationProcessing>

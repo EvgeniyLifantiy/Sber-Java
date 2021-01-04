@@ -20,6 +20,6 @@ public class Terminallmpl {
         pinValidator.setPin(pin);
     }
 
-
+    private static int passwordcounter=0;
 }
 
