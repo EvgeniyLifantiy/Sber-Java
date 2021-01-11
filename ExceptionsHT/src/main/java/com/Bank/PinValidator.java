@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class PinValidator {
 
+    private AccountIsLockedException accountIsLockedException;
+
+    private boolean isAuthorized=false;
+
     private String pin = "1111";
 
     public String getPin() {
@@ -19,7 +23,25 @@ public class PinValidator {
 
     Scanner scanner = new Scanner(System.in);
 
-    public boolean enterPin() throws Exception {
+    public void validate (String enteredPin) {
+        if (enteredPin.startsWith(this.pin)){
+            isAuthorized=true;
+            System.out.printf("Вход выполнен!");
+        }else {
+            wrongpin++;
+        }
+    }
+
+    public void enterPin() throws Exception {
+
+        try {
+            if(wrongpin==3){
+                throw accountIsLockedException;
+            }
+        }catch (AccountIsLockedException e){
+            System.out.printf("Аккаунт заблокирован!");
+            accountIsLockedException.setTime(System.currentTimeMillis());
+        }
 
         String enteredPin = "";
 
@@ -37,35 +59,9 @@ public class PinValidator {
 
         }
 
+        validate(enteredPin);
 
-
-        if (enteredPin.startsWith(pin) && this.wrongpin<3) {
-
-            System.out.println("Пин верный!");
-            return true;
-
-        }else {
-
-            System.out.printf("Неверно");
-            this.wrongpin++;
-
-            try {
-                System.out.printf(String.valueOf(this.wrongpin));
-                if(this.wrongpin>=3){
-                    throw new AccountIsLockedException();
-                }else {
-                    enterPin();
-                }
-
-            }catch (AccountIsLockedException e){
-                if(e.getStartlock()==0 && wrongpin==3){
-                    e.setStartlock(System.currentTimeMillis());
-                }
-                System.out.printf("Account was blocked! Wait " + (System.currentTimeMillis()-e.getStartlock()));
-                enterPin();
-            }
-        }
-
-    return false;
     }
 }
+
+
