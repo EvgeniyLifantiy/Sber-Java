@@ -24,6 +24,8 @@ public class PinValidator {
         String enteredPin = "";
 
         while (enteredPin.length() < 4) {
+
+
             try {
                 enteredPin += scanner.nextInt();
 
@@ -31,18 +33,37 @@ public class PinValidator {
                 scanner.skip("[!-~]");// skip all that was added after NaN symbol
                 System.out.println("Вводите только цифры!");
             }
+
+
         }
-        if (enteredPin.startsWith(pin)) {
+
+
+
+        if (enteredPin.startsWith(pin) && this.wrongpin<3) {
+
             System.out.println("Пин верный!");
             return true;
-        }else {
-            System.out.printf("Неверно");
-            wrongpin++;
-            if(wrongpin>=3){
-                throw new Exception();
-            }
-            enterPin();
 
+        }else {
+
+            System.out.printf("Неверно");
+            this.wrongpin++;
+
+            try {
+                System.out.printf(String.valueOf(this.wrongpin));
+                if(this.wrongpin>=3){
+                    throw new AccountIsLockedException();
+                }else {
+                    enterPin();
+                }
+
+            }catch (AccountIsLockedException e){
+                if(e.getStartlock()==0 && wrongpin==3){
+                    e.setStartlock(System.currentTimeMillis());
+                }
+                System.out.printf("Account was blocked! Wait " + (System.currentTimeMillis()-e.getStartlock()));
+                enterPin();
+            }
         }
 
     return false;

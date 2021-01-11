@@ -1,7 +1,7 @@
 package com.Bank;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
      Terminallmpl terminallmpl= new Terminallmpl("2349");
 
