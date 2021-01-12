@@ -1,10 +1,15 @@
 package com.Bank;
 
 
+import java.util.InputMismatchException;
 
 public class Terminallmpl {
 
     private final PinValidator pinValidator = new PinValidator();
+
+    private final Server server=new Server();
+
+    private static int passwordcounter=0;
 
     public PinValidator getPinValidator() {
         return pinValidator;
@@ -14,12 +19,15 @@ public class Terminallmpl {
         return server;
     }
 
-    private final Server server=new Server();
-
     public Terminallmpl(String pin) {
-        pinValidator.setPin(pin);
+        server.setPin(pin);
     }
 
-    private static int passwordcounter=0;
+    public void enterSymbol() throws Exception {
+
+
+
+    }
+
 }
 
