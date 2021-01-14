@@ -10,3 +10,5 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 ## Third Hometask ##
 * [Parametrize and implement CountMap](https://github.com/EvgeniyLifantiy/Sber-Java/ThirdTask/src/main/java/com/CountMap)
 * [Parametrize and realize methods with PECS](https://github.com/EvgeniyLifantiy/Sber-Java/ThirdTask/src/main/java/com/PECS)
+## Module.Build Tools.Testing ##
+* [Design a social network](https://github.com/EvgeniyLifantiy/SocialNetwork)
