@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="FirstTask" />
-        <module name="SecondTask" />
         <module name="ThirdTask" />
+        <module name="SecondTask" />
         <module name="ExceptionsHT" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="14" />
+    <bytecodeTargetLevel target="14">
+      <module name="ProfileService" target="13" />
+      <module name="TestingTask" target="13" />
+    </bytecodeTargetLevel>
   </component>
 </project>

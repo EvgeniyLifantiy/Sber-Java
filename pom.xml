@@ -29,6 +29,8 @@
         <module>SecondTask</module>
         <module>ThirdTask</module>
         <module>ExceptionsHT</module>
+        <module>TestingTask</module>
+        <module>ProfileService</module>
     </modules>
 
 
