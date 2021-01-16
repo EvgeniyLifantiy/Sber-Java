@@ -12,5 +12,5 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 * [Parametrize and realize methods with PECS](https://github.com/EvgeniyLifantiy/Sber-Java/ThirdTask/src/main/java/com/PECS)
 ## Module.Build Tools.Testing ##
 * [Design a social network](https://github.com/EvgeniyLifantiy/SocialNetwork)
-## Module.Build Tools.Testing ##
-* [Design a social network](https://github.com/EvgeniyLifantiy/SocialNetwork)
+## Exception HomeTask ##
+* [Create Terminal,which can : get/put money, check Balance.](https://github.com/EvgeniyLifantiy/Sber-Java/ExceprionHT)
