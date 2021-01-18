@@ -31,12 +31,12 @@ public class Main {
         pinValidator.verifyPin(); // test verify, call the method and enter wrong pin more than 3 times
 
         try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {  //white sometime
+            Thread.sleep(1000); //wait sometime
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        pinValidator.verifyPin();   //try to call method but get exception
+        pinValidator.verifyPin();   //try to call method but get exception and lifttime
 
 
 

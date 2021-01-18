@@ -9,7 +9,9 @@
         <module name="FirstTask" />
         <module name="ThirdTask" />
         <module name="SecondTask" />
+        <module name="SerializationHT" />
         <module name="ExceptionsHT" />
+        <module name="ReflectionHT" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">

@@ -31,6 +31,8 @@
         <module>ExceptionsHT</module>
         <module>TestingTask</module>
         <module>ProfileService</module>
+        <module>SerializationHT</module>
+        <module>SixthHT</module>
     </modules>
 
 

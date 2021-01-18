@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
         //Here you can input your test path to text file
         String filepath="C:\\Users\\Евгений\\file.txt";
@@ -20,7 +20,11 @@ public class Main {
         Counter counter=new Counter();
 
         //Task 1
-        counter.CountWords(counter.getText(filepath));
+        try {
+            counter.CountWords(counter.getText(filepath));
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found!");
+        }
         System.out.println("Task 1 : Unique words in text :"+counter.getUniqueWords());
         System.out.println(" Various words in text :"+counter.getWords());
 
