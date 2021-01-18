@@ -38,8 +38,6 @@ public class PinValidator {
 
         int index=0; // symbols of pin
 
-        boolean notnumber=false;
-
         while (attemptCount<3){
             while (index<4){
                 try{
@@ -48,9 +46,8 @@ public class PinValidator {
                 }catch (InputMismatchException e){
                     scanner.skip("[@-}]"); //skip NaN
                 }finally {
-                    if(notnumber){
                         System.out.println("Вводите только цифры!");
-                    }
+
                 }
             }
             if (index>=4){
