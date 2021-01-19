@@ -8,9 +8,11 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 * [There is a list of the fleet of cars car(string model, string type). you need to split it into lists grouped by type.](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SecondTask/src/main/java/com/CarList)
 * [Working with collections](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SecondTask/src/main/java/com/Presentation)
 ## Third Hometask ##
-* [Parametrize and implement CountMap](https://github.com/EvgeniyLifantiy/Sber-Java/ThirdTask/src/main/java/com/CountMap)
-* [Parametrize and realize methods with PECS](https://github.com/EvgeniyLifantiy/Sber-Java/ThirdTask/src/main/java/com/PECS)
+* [Parametrize and implement CountMap](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/ThirdTask/src/main/java/com/CountMap)
+* [Parametrize and realize methods with PECS](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/ThirdTask/src/main/java/com/PECS)
 ## Module.Build Tools.Testing ##
 * [Design a social network](https://github.com/EvgeniyLifantiy/SocialNetwork)
 ## Exception HomeTask ##
-* [Create Terminal,which can : get/put money, check Balance.](https://github.com/EvgeniyLifantiy/Sber-Java/ExceprionHT)
+* [Create Terminal,which can : get/put money, check Balance.](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/ExceptionsHT)
+## Reflection HomeTask ##
+* [Test reflection abilities. Create MetricProxy and BeanUnits](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SixthHT)
