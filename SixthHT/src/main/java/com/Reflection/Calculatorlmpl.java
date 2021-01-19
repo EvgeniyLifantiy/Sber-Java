@@ -6,6 +6,7 @@ public class Calculatorlmpl implements Calculator {
 
     }
 
+    @Metric
     @Override
     public long calc(int number) {
         long factorial=1L;

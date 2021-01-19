@@ -15,8 +15,9 @@ public class TestAllClassMethods {
 
     public static final String MONDAY = "MONDAY";
     public static final String TUESDAY = "TUESDAY";
-
-
+    public static final String WEDNESDAY = "WEDNESDAY";
+    public static final String THURSDAY = "THURSDAY";
+    public static final String FRIDAY = "FRIDAY";
 
      Calculatorlmpl calculatorlmpl=new Calculatorlmpl();
 
@@ -49,9 +50,28 @@ public class TestAllClassMethods {
         TestAllClassMethods testAllClassMethods=new TestAllClassMethods();
         Field[] fields= testAllClassMethods.getClass().getDeclaredFields();
         for (Field field:fields){
-            Assert.assertEquals(field.get(testAllClassMethods),field.getName());
+            if(!field.getName().equals("calculatorlmpl")) {//ignore field for tests(calculatorlmpl)
+                Assert.assertEquals(field.get(testAllClassMethods), field.getName());
+                System.out.println(field.getName());
+            }
         }
     }
+
+    @Test
+    public void TestMetric()  {
+
+        MetricInvocationHandler metricInvocationHandler=new MetricInvocationHandler(calculatorlmpl);
+
+        Object[] array=new Object[]{1};
+        try {
+            System.out.println(metricInvocationHandler.invoke(calculatorlmpl,calculatorlmpl.getClass().getMethod("calc", int.class), array));
+
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
+
+
 }
 
 

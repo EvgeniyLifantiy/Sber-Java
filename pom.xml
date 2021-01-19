@@ -33,6 +33,8 @@
         <module>ProfileService</module>
         <module>SerializationHT</module>
         <module>SixthHT</module>
+        <module>LambdaStreamHT</module>
+        <module>ClassLoader</module>
     </modules>
 
 

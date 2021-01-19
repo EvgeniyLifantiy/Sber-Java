@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FirstTask" />
         <module name="ThirdTask" />
-        <module name="SecondTask" />
         <module name="SerializationHT" />
-        <module name="ExceptionsHT" />
+        <module name="LambdaStreamHT" />
         <module name="ReflectionHT" />
+        <module name="ClassLoader" />
+        <module name="FirstTask" />
+        <module name="SecondTask" />
+        <module name="ExceptionsHT" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">
