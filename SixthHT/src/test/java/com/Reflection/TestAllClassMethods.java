@@ -1,7 +1,6 @@
 package com.Reflection;
 
-import org.apache.tools.ant.taskdefs.Property;
-import org.junit.AfterClass;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

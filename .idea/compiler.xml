@@ -9,6 +9,7 @@
         <module name="Serialization" />
         <module name="JavaClasses" />
         <module name="Multithreading" />
+        <module name="StreamHT" />
         <module name="LambdaStreamHT" />
         <module name="ReflectionHT" />
         <module name="ClassLoader" />
