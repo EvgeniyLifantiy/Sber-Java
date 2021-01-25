@@ -35,6 +35,8 @@
         <module>SixthHT</module>
         <module>LambdaStreamHT</module>
         <module>ClassLoader</module>
+        <module>StreamHT</module>
+        <module>Multithreading</module>
     </modules>
 
 

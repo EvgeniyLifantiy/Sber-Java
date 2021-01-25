@@ -6,17 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ThirdTask" />
-        <module name="SerializationHT" />
+        <module name="Serialization" />
+        <module name="JavaClasses" />
+        <module name="Multithreading" />
         <module name="LambdaStreamHT" />
         <module name="ReflectionHT" />
         <module name="ClassLoader" />
-        <module name="FirstTask" />
-        <module name="SecondTask" />
+        <module name="Collection" />
+        <module name="Reflection" />
+        <module name="Lambda" />
+        <module name="Generics" />
         <module name="ExceptionsHT" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">
+      <module name="Lambda" target="13" />
       <module name="ProfileService" target="13" />
       <module name="TestingTask" target="13" />
     </bytecodeTargetLevel>

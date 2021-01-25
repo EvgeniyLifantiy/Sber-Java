@@ -22,7 +22,7 @@ public class MetricInvocationHandler implements InvocationHandler {
             long first=System.nanoTime();;
             Object invoke = method.invoke(delegate, args[0]);
             time = System.nanoTime() - first;
-            System.out.println("Прошло времени "+time+ "наносек");
+            System.out.println("Прошло времени "+time+ " наносек");
             return invoke;
 
         }
