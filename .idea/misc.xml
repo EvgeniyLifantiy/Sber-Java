@@ -13,6 +13,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/ProfileService/pom.xml" />
+        <option value="$PROJECT_DIR$/StreamHT/pom.xml" />
         <option value="$PROJECT_DIR$/TestingTask/pom.xml" />
       </set>
     </option>

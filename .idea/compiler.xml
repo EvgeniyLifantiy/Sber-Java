@@ -9,20 +9,20 @@
         <module name="Serialization" />
         <module name="JavaClasses" />
         <module name="Multithreading" />
-        <module name="StreamHT" />
-        <module name="LambdaStreamHT" />
         <module name="ReflectionHT" />
+        <module name="Exceptions" />
         <module name="ClassLoader" />
         <module name="Collection" />
         <module name="Reflection" />
         <module name="Lambda" />
         <module name="Generics" />
-        <module name="ExceptionsHT" />
+        <module name="LambdaStream" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">
       <module name="Lambda" target="13" />
       <module name="ProfileService" target="13" />
+      <module name="StreamHT" target="13" />
       <module name="TestingTask" target="13" />
     </bytecodeTargetLevel>
   </component>

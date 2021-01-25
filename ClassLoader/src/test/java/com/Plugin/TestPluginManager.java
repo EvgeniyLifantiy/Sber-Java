@@ -10,7 +10,7 @@ public class TestPluginManager {
     public void TestLoad(){
 
 
-        PluginManager pluginManager1=new PluginManager(
+        PluginManager pluginManager1=new PluginManager( //Load first plugin
                 "D:\\Java\\ClassLoader\\src\\main\\java\\com\\Plugin\\ExamplePlugin.java");
         ExamplePlugin examplePlugin=new ExamplePlugin();
         Assert.assertEquals(examplePlugin.getClass(),
@@ -21,7 +21,7 @@ public class TestPluginManager {
 
 
 
-        PluginManager pluginManager2=new PluginManager(
+        PluginManager pluginManager2=new PluginManager( //Load second plugin
                 "D:\\Java\\ClassLoader\\src\\main\\java\\com\\Plugin\\anotherPlugin.java");
         com.Plugin.AnotherPlugin anotherPlugin=new com.Plugin.AnotherPlugin();
         Assert.assertEquals(anotherPlugin.getClass(),pluginManager1.load(
@@ -30,7 +30,9 @@ public class TestPluginManager {
                 "AnotherPlugin","com.Plugin.AnotherPlugin").doUsefull(),
                 anotherPlugin.doUsefull() );
 
-        PluginManager pluginManager3=new PluginManager(
+
+
+        PluginManager pluginManager3=new PluginManager( //Load plugin with same name
                 "D:\\Java\\ClassLoader\\src\\main\\java\\com\\Plugin\\plugin\\anotherPlugin.java");
         AnotherPlugin andAnotherOnePlugin=new AnotherPlugin();
         Assert.assertEquals(andAnotherOnePlugin.getClass(),pluginManager3.load(
