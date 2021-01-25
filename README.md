@@ -1,4 +1,6 @@
 # Sber-Java
+Table of contents and brief description of each task
+
 ## Main java classes ##
 * [Write a sort or binary search for an element in the array](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTask/src/main/java/com/Algorithm)
 * [Implement a hierarchy of objects Circle, Rect, Triangle, Square](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTask/src/main/java/com/Shapes)
