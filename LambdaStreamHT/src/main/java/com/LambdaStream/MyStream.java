@@ -14,22 +14,20 @@ public class MyStream<T>{
     public MyStream(Stream<T> stream) {
         this.stream=stream;
     }
-
     public static <T> MyStream<T> of(List<T> list) {
-            return new MyStream<>(list.stream());
-        }
+        return new MyStream<>(list.stream());
+    }
 
-        public MyStream <T>filter(Predicate<? super T> predicate) {
-            return new MyStream<>(stream.filter(predicate));
-        }
+    public MyStream <T>filter(Predicate<? super T> predicate) {
+        return new MyStream<>(stream.filter(predicate));
+    }
 
-        public <R> MyStream <R>transform(Function<? super T,? extends R> function) {
-            return new MyStream<>(stream.map(function));
-        }
+    public <R> MyStream <R>transform(Function<? super T,? extends R> function) {
+        return new MyStream<>(stream.map(function));
+    }
 
-        public <K,V> Map<K,V> toMap(Function<? super T, ? extends K> keyMapper,
-                             Function<? super T, ? extends V> valueMapper) {
-           return (Map<K, V>) stream.collect(Collectors.toMap(keyMapper,valueMapper));
-        }
-
+    public <K,V> Map<K,V> toMap(Function<? super T, ? extends K> keyMapper,
+                                Function<? super T, ? extends V> valueMapper) {
+        return (Map<K, V>) stream.collect(Collectors.toMap(keyMapper,valueMapper));
+    }
 }
