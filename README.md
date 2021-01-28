@@ -22,3 +22,6 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 *[Create plugin loader and EncryptedClassloader](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/ClassLoader/src)
 ## 9. Lambda/stream  ##
 * [Create and test class based on java.util.stream.Stream](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/LambdaStreamHT)
+## 10. Multithreading ## 
+* [Create ThreadPool with fixed amount of threads](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/Multithreading/src/main/java/com/Multitreading/FixedThreadPool.java)
+* [Create ThreadPool with min and max threads](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/Multithreading)
