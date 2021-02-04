@@ -14,7 +14,9 @@ public @interface Cache {
 
     String name() default "Save";
 
+    //need to create implementation
     int maxSize() default 100;
+
 
     boolean isZip() default false;
 
