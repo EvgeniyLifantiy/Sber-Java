@@ -17,5 +17,5 @@ public interface Service {
      int FileWork(String name,@Choose int value);
 
     @Cache(name = "Third", cachetype = CacheType.FILE, isZip = true)
-     int ZipWork( String name,@Choose int value);
+     int ZipWork( @Choose String name, int value);
 }
