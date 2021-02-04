@@ -19,7 +19,9 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 ## 6. Reflection,proxy,annotations  ##
 * [Test reflection abilities. Create MetricProxy and BeanUnits](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SixthHT)
 ## 7. Classloaders ##
-*[Create plugin loader and EncryptedClassloader](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/ClassLoader/src)
+* [Create plugin loader and EncryptedClassloader](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/ClassLoader/src)
+## 8. Serialization ##
+* [Create expandable cache proxy](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SerializationHT)
 ## 9. Lambda/stream  ##
 * [Create and test class based on java.util.stream.Stream](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/LambdaStreamHT)
 ## 10. Multithreading ## 
