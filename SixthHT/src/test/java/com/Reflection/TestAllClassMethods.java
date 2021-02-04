@@ -63,7 +63,8 @@ public class TestAllClassMethods {
 
         Object[] array=new Object[]{1};
         try {
-            System.out.println(metricInvocationHandler.invoke(calculatorlmpl,calculatorlmpl.getClass().getMethod("calc", int.class), array));
+            System.out.println(metricInvocationHandler.invoke(
+                    calculatorlmpl,calculatorlmpl.getClass().getMethod("calc", int.class), array));
 
         } catch (Throwable throwable) {
             throwable.printStackTrace();
