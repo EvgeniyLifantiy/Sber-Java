@@ -8,7 +8,7 @@ public interface Service {
     default @Choose on value
      */
 
-    public int MemoryWork( String name,@Choose int value);
-    public int FileWork(String name,@Choose int value);
-    public int ZipWork( String name,@Choose int value);
+     int MemoryWork( String name,@Choose int value);
+     int FileWork(String name,@Choose int value);
+     int ZipWork( String name,@Choose int value);
 }
