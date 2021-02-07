@@ -13,11 +13,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class CacheInvocationHandler implements InvocationHandler, Serializable {
 
     private final Object delegate;
-    Map<Object,Object> cacheMap=new HashMap<>();
+    private Map<Object,Object> cacheMap=new HashMap<>();
+    private final Lock lock = new ReentrantLock();
 
     public CacheInvocationHandler(Object delegate){
         this.delegate=delegate;
@@ -62,9 +65,12 @@ public class CacheInvocationHandler implements InvocationHandler, Serializable {
         boolean isZip = method.getAnnotation(Cache.class).isZip();
 
         if (cachetype.equals(CacheType.FILE)) {
-            cacheMap = Serialize.load(fileName + ".zip", isZip); //Choose place from load
+            //Choose place from load
+            cacheMap = Serialize.load(fileName + ".zip", isZip);
         }
-
+        //Block shared resource( Concurrent HT)
+        lock.lock();
+        try {
         if (!cacheMap.containsKey(annotated)) {
             Object invoke = null;
             try {
@@ -79,13 +85,19 @@ public class CacheInvocationHandler implements InvocationHandler, Serializable {
 
 
             if (cachetype.equals(CacheType.FILE)) {
-                Serialize.save(cacheMap, fileName, isZip); //Choose place for save
+                synchronized (this) {
+                    //Choose place for save
+                    Serialize.save(cacheMap, fileName, isZip);
+                }
             }
             return invoke;
         } else {
 
             //if cached successfully
             return cacheMap.get(annotated);
+        }}finally {
+            //unlock Shared resources
+            lock.unlock();
         }
     }
 

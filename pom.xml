@@ -37,6 +37,7 @@
         <module>ClassLoader</module>
         <module>StreamHT</module>
         <module>Multithreading</module>
+        <module>Java-Memory</module>
     </modules>
 
 
