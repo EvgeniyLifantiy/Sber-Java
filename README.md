@@ -24,6 +24,8 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 * [Create expandable cache proxy](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SerializationHT)
 ## 9. Lambda/stream  ##
 * [Create and test class based on java.util.stream.Stream](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/LambdaStreamHT)
-## 10. Multithreading ## 
+## 10,11. Multithreading ## 
 * [Create ThreadPool with fixed amount of threads](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/Multithreading/src/main/java/com/Multitreading/FixedThreadPool.java)
 * [Create ThreadPool with min and max threads](https://github.com/EvgeniyLifantiy/Sber-Java/blob/master/Multithreading/src/main/java/com/Multitreading/ScalableThreadPool.java)
+## 13 Concuttent ##
+* [Improve CachedProxy from Serialization HT so that they are Concurrent](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SerializationHT)
