@@ -29,3 +29,5 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 * [Create ThreadPool with min and max threads](https://github.com/EvgeniyLifantiy/Sber-Java/blob/master/Multithreading/src/main/java/com/Multitreading/ScalableThreadPool.java)
 ## 13 Concurrent ##
 * [Improve CachedProxy from Serialization HT so that they are Concurrent](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SerializationHT)
+## 14 Refactor(Patterns) ##
+* [Refactor existent classes](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/Refacror)
