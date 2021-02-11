@@ -1,44 +1,34 @@
 package com.Refactor.Tractor;
 
+import com.Refactor.Tractor.Moves.Movable;
+
 public class Tractor {
 
-    int[] position = new int[] { 0, 0 };
-    int[] field = new int[] { 5, 5 };
-    Orientation orientation = Orientation.NORTH;
+    private int[] position = new int[] { 0, 0 };
+    private int[] field = new int[] { 5, 5 };
+    private Movable move;
+
+    public Tractor(Movable move){
+        this.move=move;
+    }
 
     public void move(String command) {
-        if (command == "F") {
+        if (command.equals("F")) {
             moveForwards();
-        } else if (command == "T") {
+        } else if (command.equals("T")) {
             turnClockwise();
         }
     }
 
-    public void moveForwards() {
-        if (orientation == Orientation.NORTH) {
-            position = new int[] { position[0], position[1] + 1 };
-        } else if (orientation == Orientation.EAST) {
-            position = new int[] { position[0] + 1, position[1] };
-        } else if (orientation == Orientation.SOUTH) {
-            position = new int[] { position[0], position[1] - 1 };
-        } else if (orientation == Orientation.WEST) {
-            position = new int[] { position[0] - 1, position[1] };
-        }
+    public void moveForwards() throws TractorInDitchException{
+        move.moveForwards(this);
         if (position[0] > field[0] || position[1] > field[1]) {
-            throw new TractorInDitchException();
+            throw new TractorInDitchException("Out of Field`s bounds!");
         }
     }
 
     public void turnClockwise() {
-        if (orientation == Orientation.NORTH) {
-            orientation = Orientation.EAST;
-        } else if (orientation == Orientation.EAST) {
-            orientation = Orientation.SOUTH;
-        } else if (orientation == Orientation.SOUTH) {
-            orientation = Orientation.WEST;
-        } else if (orientation == Orientation.WEST) {
-            orientation = Orientation.NORTH;
-        }
+        move.turnClockwise(this);
     }
 
     public int getPositionX() {
@@ -49,8 +39,19 @@ public class Tractor {
         return position[1];
     }
 
-    public Orientation getOrientation() {
-        return orientation;
+    public int[] getPosition() {
+        return position;
     }
 
+    public void setPosition(int[] position) {
+        this.position = position;
+    }
+
+    public void setMove(Movable move){
+        this.move=move;
+    }
+
+    public Movable getMove() {
+        return move;
+    }
 }
