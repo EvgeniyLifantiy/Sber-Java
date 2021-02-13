@@ -18,6 +18,7 @@
         <module name="Exceptions" />
         <module name="ClassLoader" />
         <module name="Collection" />
+        <module name="JDBC" />
         <module name="Lambda" />
         <module name="Generics" />
       </profile>

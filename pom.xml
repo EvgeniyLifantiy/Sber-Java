@@ -38,6 +38,7 @@
         <module>StreamHT</module>
         <module>Multithreading</module>
         <module>Java-Memory</module>
+        <module>JDBC</module>
     </modules>
 
 
