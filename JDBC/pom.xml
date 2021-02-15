@@ -11,6 +11,15 @@
 
     <artifactId>JDBC</artifactId>
 
+    <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+    <dependencies>
+    <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>1.4.199</version>
+    </dependency>
+    </dependencies>
+
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
