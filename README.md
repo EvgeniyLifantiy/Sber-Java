@@ -1,5 +1,6 @@
 # Sber-Java
 Table of contents and brief description of each task
+ link to each task is located in an additional file
 
 ## 1. Main java classes ##
 * [Write a sort or binary search for an element in the array](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTask/src/main/java/com/Algorithm)
@@ -30,4 +31,5 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 ## 13 Concurrent ##
 * [Improve CachedProxy from Serialization HT so that they are Concurrent](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SerializationHT)
 ## 14 Refactor(Patterns) ##
-* [Refactor existent classes](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/Refacror)
+* [Refactor existent classes](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/Refacror/src/main/java/com/Refactor)
+* [Refactor with SOLID](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/Refacror/src/main/java/com/Refactor/Salary)
