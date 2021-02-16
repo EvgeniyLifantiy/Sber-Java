@@ -30,7 +30,6 @@ class Calculator {
 
         for (int i = 1; i <= number; i++) {
             multiply*=i;
-
         }
         return multiply;
     }
