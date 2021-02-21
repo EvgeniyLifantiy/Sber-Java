@@ -39,6 +39,7 @@
         <module>Multithreading</module>
         <module>Java-Memory</module>
         <module>JDBC</module>
+        <module>Spring</module>
     </modules>
 
 

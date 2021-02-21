@@ -12,6 +12,7 @@
         <module name="ReflectionHT" />
         <module name="Refacror" />
         <module name="Reflection" />
+        <module name="Spring" />
         <module name="LambdaStream" />
         <module name="Serialization" />
         <module name="Multithreading" />

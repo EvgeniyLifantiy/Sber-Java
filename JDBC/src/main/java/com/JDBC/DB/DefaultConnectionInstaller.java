@@ -8,14 +8,6 @@ import java.sql.SQLException;
 
 public class DefaultConnectionInstaller implements ConnectionInstaller {
 
-    public void Connect(String link, String login, String password)  {
-        try {
-            connection=DriverManager.getConnection(link,login,password);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
     Connection connection;
 
     public Connection getConnection() {
@@ -24,5 +16,13 @@ public class DefaultConnectionInstaller implements ConnectionInstaller {
 
     public void setConnection(Connection connection) {
         this.connection = connection;
+    }
+
+    public void Connect(String link, String login, String password)  {
+        try {
+            connection=DriverManager.getConnection(link,login,password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
