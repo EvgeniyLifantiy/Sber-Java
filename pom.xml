@@ -40,6 +40,9 @@
         <module>Java-Memory</module>
         <module>JDBC</module>
         <module>Spring</module>
+        <module>SpringJdbc</module>
+        <module>SpingMVC</module>
+        <module>SprinMVC</module>
     </modules>
 
 

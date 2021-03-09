@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/demo" />
+    <file type="web" url="file://$PROJECT_DIR$/SpingMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/SprinMVC" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -10,13 +16,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Refacror/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/ProfileService/pom.xml" />
-        <option value="$PROJECT_DIR$/StreamHT/pom.xml" />
-        <option value="$PROJECT_DIR$/TestingTask/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_13" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK">

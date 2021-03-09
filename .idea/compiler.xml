@@ -15,6 +15,7 @@
         <module name="Spring" />
         <module name="LambdaStream" />
         <module name="Serialization" />
+        <module name="SpringJdbc" />
         <module name="Multithreading" />
         <module name="Exceptions" />
         <module name="ClassLoader" />
@@ -22,14 +23,9 @@
         <module name="JDBC" />
         <module name="Lambda" />
         <module name="Generics" />
+        <module name="SprinMVC" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="14">
-      <module name="Lambda" target="13" />
-      <module name="Patterns" target="13" />
-      <module name="ProfileService" target="13" />
-      <module name="StreamHT" target="13" />
-      <module name="TestingTask" target="13" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="14" />
   </component>
 </project>
