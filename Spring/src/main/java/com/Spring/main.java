@@ -14,6 +14,7 @@ public class main {
 
         absTractor.moveForwards();
 
+        System.out.println("hello");
 
     }
 }

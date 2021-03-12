@@ -5,6 +5,8 @@
     <file type="web" url="file://$PROJECT_DIR$/demo" />
     <file type="web" url="file://$PROJECT_DIR$/SpingMVC" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMvcExc" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMvcException" />
     <file type="web" url="file://$PROJECT_DIR$/SprinMVC" />
   </component>
   <component name="JavaScriptSettings">
@@ -15,7 +17,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Refacror/pom.xml" />
+        <option value="$PROJECT_DIR$/SprinMVC/SpringMVCExcepti/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/JdbcSpring/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_13" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK">

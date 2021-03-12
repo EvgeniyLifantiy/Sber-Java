@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Java-Memory" />
         <module name="JavaClasses" />
+        <module name="SpringMvcExc" />
         <module name="ReflectionHT" />
         <module name="Refacror" />
         <module name="Reflection" />
@@ -26,6 +27,8 @@
         <module name="SprinMVC" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="14" />
+    <bytecodeTargetLevel target="14">
+      <module name="JdbcSpring" target="13" />
+    </bytecodeTargetLevel>
   </component>
 </project>

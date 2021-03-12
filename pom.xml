@@ -41,8 +41,9 @@
         <module>JDBC</module>
         <module>Spring</module>
         <module>SpringJdbc</module>
-        <module>SpingMVC</module>
         <module>SprinMVC</module>
+        <module>SpringMvcExc</module>
+        <module>JdbcSpring</module>
     </modules>
 
 
