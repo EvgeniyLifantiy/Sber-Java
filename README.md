@@ -41,3 +41,5 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 * [Create web application which retrieves the content of the remote resource and returns it in its response](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SprinMVC/src/main/java/com/SpringMVC)
 ## 18 SpringJdbc ##
 * [Create Consol App, which can save.search and delete pecipes](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SpringJdbc)
+## 19 ORM,Hibernate,JPA 
+* [Upgrade SpringJdbc task with ORM](https://github.com/EvgeniyLifantiy/Jpa/tree/main/src/main/java/com/example/demo)
