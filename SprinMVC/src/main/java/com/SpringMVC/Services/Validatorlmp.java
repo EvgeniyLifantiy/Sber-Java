@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletResponse;
 
 @Component
 public class Validatorlmp implements Validator {
+/*
+    Links validator
+ */
 
     @Autowired
     public Validatorlmp(Repository repository) {

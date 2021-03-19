@@ -10,6 +10,9 @@ import javax.sql.DataSource;
 @Component
 public class SQLConnector {
 
+    /*
+    Connect class
+     */
     private static final String URL="jdbc:mysql://localhost:3306/recipes_db";
     private static final String USERNAME="root";
     private static final String PASSWORD="123456789";

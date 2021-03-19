@@ -28,7 +28,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">
+      <module name="Hibernate" target="13" />
       <module name="JdbcSpring" target="13" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Hibernate" options="" />
+    </option>
   </component>
 </project>

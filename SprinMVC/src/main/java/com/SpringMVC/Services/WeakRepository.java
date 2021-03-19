@@ -9,6 +9,9 @@ import java.util.WeakHashMap;
 @Component
 public class WeakRepository implements Repository {
 
+    /*
+    repository realization via WeakHashMap
+     */
     Map<String,Long> storage=new WeakHashMap();
 
     @Override

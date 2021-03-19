@@ -2,9 +2,10 @@ package com.Reflection;
 
 public class Calculatorlmpl implements Calculator {
 
-    private void dosome(){
+    /*
+    testing in test root
+     */
 
-    }
 
     @Metric
     @Override

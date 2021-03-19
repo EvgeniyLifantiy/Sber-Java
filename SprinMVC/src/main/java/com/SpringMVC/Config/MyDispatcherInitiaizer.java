@@ -1,6 +1,9 @@
 package com.SpringMVC.Config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+/*
+Configuration class
+ */
 
 public class MyDispatcherInitiaizer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override

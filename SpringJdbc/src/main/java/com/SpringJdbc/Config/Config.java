@@ -1,6 +1,8 @@
-package com.SpringJdbc;
+package com.SpringJdbc.Config;
 
 
+import com.SpringJdbc.Dao;
+import com.SpringJdbc.Recipe;
 import org.junit.Assert;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -22,6 +24,9 @@ public class Config {
         map.put("Картошка",200);
         map.put("Молока",300);
         Recipe recipe=new Recipe("Пюре","Евгений",map);
+
+
+        //todo Relocate to Test
 
         //adding to db
         dao.add(recipe);

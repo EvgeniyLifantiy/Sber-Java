@@ -32,10 +32,15 @@ public class Tractor {
         }
     }
 
+
     public void turnClockwise() {
         move.turnClockwise(this);
     }
 
+
+
+
+    // Getters and Setters
     public int getPositionX() {
         return position[0];
     }

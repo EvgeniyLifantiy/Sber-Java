@@ -23,6 +23,9 @@ public class HelloController {
         return "index";
     }
 
+    /*
+    redirect method
+     */
     @GetMapping("/getURL")
     public void getUrl(HttpServletResponse httpServletResponse,@RequestParam String url) throws IOException {
         httpServletResponse.addDateHeader("dateCache",validator.validate(url, httpServletResponse) );
