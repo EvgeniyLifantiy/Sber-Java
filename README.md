@@ -28,6 +28,8 @@ Celsius scale](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/FirstTas
 ## 10,11. Multithreading ## 
 * [Create ThreadPool with fixed amount of threads](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/Multithreading/src/main/java/com/Multitreading/FixedThreadPool.java)
 * [Create ThreadPool with min and max threads](https://github.com/EvgeniyLifantiy/Sber-Java/blob/master/Multithreading/src/main/java/com/Multitreading/ScalableThreadPool.java)
+## 12 Jit, JVM, GC ##
+* [Test differn JC and GC](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/JJG)
 ## 13 Concurrent ##
 * [Improve CachedProxy from Serialization HT so that they are Concurrent](https://github.com/EvgeniyLifantiy/Sber-Java/tree/master/SerializationHT)
 ## 14 Refactor(Patterns) ##
