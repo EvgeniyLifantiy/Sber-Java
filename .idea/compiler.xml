@@ -10,6 +10,7 @@
         <module name="Java-Memory" />
         <module name="JavaClasses" />
         <module name="SpringMvcExc" />
+        <module name="JJG" />
         <module name="ReflectionHT" />
         <module name="Refacror" />
         <module name="Reflection" />
